@@ -4,7 +4,7 @@ services:
     - docker
 
 before-install:
-    - docker build -t yogeshAtos/docker-react -f Dockerfile.dev .
+    - docker build -t yogeshatos/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run yogeshAtos/docker-react npm run test -- --coverage
+    - docker run yogeshatos/docker-react npm run test -- --coverage
